@@ -36,10 +36,10 @@ SimpleCounter.propTypes = {
 let counter = 0;
 
 setInterval(function () {
-  const cuatro = Math.floor(counter / 1000);
-  const tres = Math.floor(counter / 100);
-  const dos = Math.floor(counter / 10);
-  const uno = Math.floor(counter / 1);
+  const cuatro = Math.floor(counter / 1000) % 10;
+  const tres = Math.floor(counter / 100) % 10;
+  const dos = Math.floor(counter / 10) % 10;
+  const uno = Math.floor(counter / 1) % 10;
 
   counter++
 
